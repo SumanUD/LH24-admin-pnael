@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living Healthy 24 | Medicine Admin</title>
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="module" src="/src/main-v4.js"></script>
+</head>
+<body data-shell="admin" data-page="dashboard" data-breadcrumb="Home > Dashboard">
+
+<main class="main">
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="page-header-row">
+      <div>
+        <div class="page-pretitle">Operations</div>
+        <h1 class="page-title">Living Healthy 24 Medicine Dashboard</h1>
+      </div>
+      <div class="page-actions">
+        <button class="btn btn-outline">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v12M2 8h12"/></svg>
+          Add medicine
+        </button>
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h8M8 4v8"/></svg>
+          Export report
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row col-3">
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3H9a2 2 0 00-2 2v2H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-2V5a2 2 0 00-2-2z"/><path d="M8 9h8"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Medicines in stock</div>
+          <div class="stat-value-row">
+            <span class="stat-value">1,248</span>
+            <span class="stat-change up"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3M3 6l3-3 3 3"/></svg>9%</span>
+          </div>
+          <div class="stat-subtext">+84 units this week</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h12l3 5-6 13-6-13 3-5z"/><path d="M12 8v9"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Low stock alerts</div>
+          <div class="stat-value-row">
+            <span class="stat-value">26</span>
+            <span class="stat-change down"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v6M3 6l3 3 3-3"/></svg>4%</span>
+          </div>
+          <div class="stat-subtext">7 critical items need restock</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon yellow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4h10l2 4v10a2 2 0 01-2 2H7a2 2 0 01-2-2V8l2-4z"/><path d="M4 8h16"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Prescription orders</div>
+          <div class="stat-value-row">
+            <span class="stat-value">342</span>
+            <span class="stat-change up"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3M3 6l3-3 3 3"/></svg>12%</span>
+          </div>
+          <div class="stat-subtext">28 awaiting pharmacist approval</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row col-3">
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15V7a2 2 0 012-2h10a2 2 0 012 2v8"/><path d="M9 11h6"/><path d="M9 15h4"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Expiry watchlist</div>
+          <div class="stat-value-row">
+            <span class="stat-value">18</span>
+            <span class="stat-change up"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3M3 6l3-3 3 3"/></svg>3%</span>
+          </div>
+          <div class="stat-subtext">3 batches expire in 7 days</div>
+        </div>
+      </div>
+      <div style="padding:0 16px 12px">
+        <div class="progress-thin"><div class="bar" style="width:72%;background:var(--green)"></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16"/><path d="M4 12h16"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Supplier cases</div>
+          <div class="stat-value-row">
+            <span class="stat-value">14</span>
+            <span class="stat-change up"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3M3 6l3-3 3 3"/></svg>6%</span>
+          </div>
+          <div class="stat-subtext">2 pending deliveries</div>
+        </div>
+      </div>
+      <div style="padding:0 16px 12px">
+        <div class="progress-thin"><div class="bar" style="width:58%;background:var(--red)"></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="stat">
+        <div class="stat-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"/><path d="M2 12h20"/><circle cx="12" cy="12" r="8"/></svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-label">Daily demand</div>
+          <div class="stat-value-row">
+            <span class="stat-value">5,920</span>
+            <span class="stat-change up"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3M3 6l3-3 3 3"/></svg>15%</span>
+          </div>
+          <div class="stat-subtext">Top: Vitamin C & pain relief</div>
+        </div>
+      </div>
+      <div style="padding:0 16px 12px">
+        <div class="progress-thin"><div class="bar" style="width:66%;background:var(--purple)"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row col-8-4">
+    <div class="card">
+      <div class="chart-header">
+        <div class="chart-header-left">
+          <div class="card-title">Stock movement</div>
+          <div class="chart-stat" style="margin-top:8px">4,816 <span style="font-size:13px;font-weight:500;color:var(--green)">↑ 11%</span></div>
+          <div style="font-size:11.5px;color:var(--text-muted)">Units sold over the last 7 days</div>
+        </div>
+        <div class="chart-tabs">
+          <button class="chart-tab active">7 days</button>
+          <button class="chart-tab">30 days</button>
+          <button class="chart-tab">90 days</button>
+        </div>
+      </div>
+      <div class="chart-area">
+        <div data-chart="dashboard-network" style="width:100%;height:100%"></div>
+      </div>
+      <div class="card-footer" style="display:flex;gap:20px;font-size:11.5px;color:var(--text-muted)">
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:3px;background:var(--primary);border-radius:2px;display:inline-block"></span> Fast movers</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:3px;background:var(--azure);border-radius:2px;display:inline-block;opacity:.6"></span> Restock volume</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Daily activity</div>
+        <div class="card-options">
+          <button class="card-opt-btn" aria-label="Card options"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h8"/></svg></button>
+        </div>
+      </div>
+      <div class="card-body" style="padding:8px 16px">
+        <ul class="activity-list">
+          <li class="activity-item">
+            <div class="activity-avatar" style="background:linear-gradient(135deg,var(--primary),var(--primary-dk))">AL</div>
+            <div>
+              <div class="activity-body"><strong>Amira L.</strong> approved 12 urgent prescriptions</div>
+              <div class="activity-time">2 min ago</div>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-avatar" style="background:linear-gradient(135deg,var(--blue),#0550a0)">NR</div>
+            <div>
+              <div class="activity-body"><strong>Nadia R.</strong> received a new batch of vitamin supplements</div>
+              <div class="activity-time">18 min ago</div>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-avatar" style="background:linear-gradient(135deg,var(--green),#1a8a32)">DM</div>
+            <div>
+              <div class="activity-body"><strong>Delivery</strong> confirmed for 250 boxes of pain relief</div>
+              <div class="activity-time">45 min ago</div>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-avatar" style="background:linear-gradient(135deg,var(--yellow),#c97f00)">SK</div>
+            <div>
+              <div class="activity-body"><strong>Shiva K.</strong> flagged 3 medicines near expiry</div>
+              <div class="activity-time">1 hour ago</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row col-8-4">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Inventory overview</div>
+          <div class="card-subtitle">Latest medicine stock updates</div>
+        </div>
+        <button class="btn btn-outline btn-sm">View all</button>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Medicine</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th>Expiry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cell-mono">LH-104</td>
+                <td><div class="cell-customer"><div class="cell-avatar" style="background:var(--primary)">VC</div><span class="cell-strong">Vitamin C Plus</span></div></td>
+                <td>Supplements</td>
+                <td class="cell-strong">410</td>
+                <td><span class="status status-green">Healthy</span></td>
+                <td>Nov 2027</td>
+              </tr>
+              <tr>
+                <td class="cell-mono">LH-221</td>
+                <td><div class="cell-customer"><div class="cell-avatar" style="background:var(--azure)">PR</div><span class="cell-strong">Pain Relief</span></div></td>
+                <td>Analgesic</td>
+                <td class="cell-strong">182</td>
+                <td><span class="status status-blue">Restock</span></td>
+                <td>Aug 2026</td>
+              </tr>
+              <tr>
+                <td class="cell-mono">LH-338</td>
+                <td><div class="cell-customer"><div class="cell-avatar" style="background:var(--purple)">AB</div><span class="cell-strong">Antibiotic 500</span></div></td>
+                <td>Prescription</td>
+                <td class="cell-strong">96</td>
+                <td><span class="status status-yellow">Watch</span></td>
+                <td>Jul 2026</td>
+              </tr>
+              <tr>
+                <td class="cell-mono">LH-412</td>
+                <td><div class="cell-customer"><div class="cell-avatar" style="background:var(--yellow)">CF</div><span class="cell-strong">Cold Formula</span></div></td>
+                <td>Cold care</td>
+                <td class="cell-strong">240</td>
+                <td><span class="status status-green">Healthy</span></td>
+                <td>Jan 2028</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Storage health</div>
+          <div class="card-subtitle">Main warehouse conditions</div>
+        </div>
+        <div class="card-body">
+          <div class="storage-bar">
+            <div style="width:48%;background:var(--primary)"></div>
+            <div style="width:22%;background:var(--azure)"></div>
+            <div style="width:16%;background:var(--yellow)"></div>
+            <div style="width:14%;background:var(--border-color)"></div>
+          </div>
+          <div class="storage-legend">
+            <div class="storage-legend-item"><span class="dot" style="background:var(--primary)"></span> Cool rooms <span class="val">4.8°C</span></div>
+            <div class="storage-legend-item"><span class="dot" style="background:var(--azure)"></span> Dry storage <span class="val">2.2°C</span></div>
+            <div class="storage-legend-item"><span class="dot" style="background:var(--yellow)"></span> Freezer <span class="val">1.0°C</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-title">Priority tasks</div></div>
+        <div class="card-body" style="padding:8px 16px">
+          <div class="todo-row">
+            <div class="todo-cb"></div>
+            <span class="todo-text">Reorder pain relief packs</span>
+            <span class="todo-prio" style="background:var(--red)"></span>
+          </div>
+          <div class="todo-row">
+            <div class="todo-cb"></div>
+            <span class="todo-text">Validate expiry reports</span>
+            <span class="todo-prio" style="background:var(--yellow)"></span>
+          </div>
+          <div class="todo-row done">
+            <div class="todo-cb done"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6l2.5 3 5-6"/></svg></div>
+            <span class="todo-text">Confirm supplier delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+</body>
+</html>
